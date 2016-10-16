@@ -23,8 +23,7 @@ object hashjoinTest {
 
     //pairs1.foreachWith(i => i)((x, i) => println("[pairs1-Index " + i + "] " + x))
     //pairs2.foreachWith(i => i)((x, i) => println("[pairs2-Index " + i + "] " + x))
-    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-    
+//    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))    
     println(result.toDebugString)
   /*
 [pairs1-Index 0] (1,a)

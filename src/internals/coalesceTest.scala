@@ -12,9 +12,7 @@ object coalesceTest {
 	  
 	  val z = y.coalesce(10, false)
 	  
-	  y.foreachWith(i => i)((x, i) => println("[yPartitionIndex " + i + "] " + x))
-	  z.foreachWith(i => i)((x, i) => println("[zPartitionIndex " + i + "] " + x))
-	  
+//	  y.foreachWith(i => i)((x, i) => println("[yPartitionIndex " + i + "] " + x))//	  z.foreachWith(i => i)((x, i) => println("[zPartitionIndex " + i + "] " + x))	  
 	  println(z.toDebugString)
   }
 }

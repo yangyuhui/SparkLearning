@@ -11,9 +11,7 @@ object pipeTest {
     val a = sc.parallelize(1 to 9, 3) 
     val result = a.pipe("head -n 2")
 
-    a.foreachWith(i => i)((x, i) => println("[aIndex " + i + "] " + x))
-    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-    
+//    a.foreachWith(i => i)((x, i) => println("[aIndex " + i + "] " + x))//    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))    
      println(result.toDebugString)
   }
 }

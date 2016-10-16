@@ -12,8 +12,8 @@ object RepartitionTest2 {
       (1, 'c'), (4, 'd'))
     val pairs1 = sc.parallelize(data, 3).partitionBy(new HashPartitioner(2))
     
-    pairs1.foreachWith(i => i)((x, i) => println("[pairs1-Index " + i + "] " + x))
-  }
+//    pairs1.foreachWith(i => i)((x, i) => println("[pairs1-Index " + i + "] " + x))
+    }
 }
 /*
 [pairs1-Index 0] (3,a)

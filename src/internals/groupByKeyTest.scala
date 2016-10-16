@@ -26,8 +26,7 @@ object groupByKeyTest {
 	
 	// output:
 	//pairs.foreachWith(i => i)((x, i) => println("[dataPartitionIndex " + i + "] " + x))
-	result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-	
+//	result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))	
 	println(result.toDebugString)
 
 	/*

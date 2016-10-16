@@ -15,10 +15,7 @@ object IntersectionTest {
     
     val r = a.intersection(b)
     
-    a.foreachWith(i => i)((x, i) => println("[aIndex " + i + "] " + x))
-    b.foreachWith(i => i)((x, i) => println("[bIndex " + i + "] " + x))
-	r.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-	
+//    a.foreachWith(i => i)((x, i) => println("[aIndex " + i + "] " + x))//    b.foreachWith(i => i)((x, i) => println("[bIndex " + i + "] " + x))//	r.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))	
 	println(r.toDebugString)
 
 	/*

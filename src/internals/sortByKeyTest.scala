@@ -14,9 +14,7 @@ object sortByKeyTest {
     val pairs = sc.parallelize(data1, 3)
 
     val result = pairs.sortByKey(true, 2)
-    pairs.foreachWith(i => i)((x, i) => println("[pairsPartitionIndex " + i + "] " + x))
-    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-    
+//    pairs.foreachWith(i => i)((x, i) => println("[pairsPartitionIndex " + i + "] " + x))//    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))    
     println(result.toDebugString)
   }
 

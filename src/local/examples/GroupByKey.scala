@@ -24,7 +24,6 @@ object GroupByKey {
 	// (A,ArrayBuffer(1))
 	// (C,ArrayBuffer(4, 5, 6))
 	//result.foreach(println)
-	result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-	println(result.toDebugString)
+//	result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))	println(result.toDebugString)
   }
 }

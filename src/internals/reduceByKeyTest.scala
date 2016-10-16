@@ -29,8 +29,7 @@ object reduceByKeyTest {
     //val result = pairs.reduce((A, B) => (A._1 + "#" + B._1, A._2 + B._2))
     //val result = pairs.fold(("K0",10))((A, B) => (A._1 + "#" + B._1, A._2 + B._2))
     val result = pairs.reduceByKey(_ + _, 2)
-    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-
+//    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
     println(result.toDebugString)
     
     // output

@@ -23,9 +23,7 @@ object distinctTest {
     // [PartitionIndex 2] 4
     // [PartitionIndex 2] 5
     
-    pairs.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
-
+//    pairs.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))//    result.foreachWith(i => i)((x, i) => println("[PartitionIndex " + i + "] " + x))
     // output
     // [PartitionIndex 0] 4
     // [PartitionIndex 0] 2
